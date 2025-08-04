@@ -1,0 +1,30 @@
+﻿@page "/"
+
+@using System.Text
+
+
+<h2>Display Æøå</h2>
+
+<div>
+    <div>
+        <input @bind-value="TextVal" @bind-value:event="oninput" />
+    </div>
+    <div>
+        <label>C# value: "@TextVal"</label>
+    </div><div>
+        <label>Bytes: @InputAsBytes</label>
+    </div>
+</div>
+
+
+@code {
+    private string TextVal { get; set; } = "";
+
+    private string InputAsBytes => ByteArray(Encoding.Unicode.GetBytes(TextVal));
+
+    private string ByteArray(byte[] arr)
+    {
+        return $"[{string.Join(", ", arr)}]";
+    }
+
+}

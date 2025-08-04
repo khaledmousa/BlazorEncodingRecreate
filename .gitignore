@@ -52,3 +52,6 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/**/.vs/
+/TestApp/TestApp/Properties/launchSettings.json
+/TestApp/TestApp/TestApp.csproj.user
