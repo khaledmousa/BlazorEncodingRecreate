@@ -55,3 +55,4 @@ nunit-*.xml
 /**/.vs/
 /TestApp/TestApp/Properties/launchSettings.json
 /TestApp/TestApp/TestApp.csproj.user
+/TestApp/TestBrowser/TestBrowser.csproj.user
